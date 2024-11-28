@@ -9,6 +9,8 @@ tabela = pd.read_excel('Vendas.xlsx')
 # Evita valores vazios na tabela
 if tabela.isnull().values.any():
     print("Existem valores nulos na tabela. Verifique os dados!")
+tabela = tabela.dropna()  # Remove linhas com valores nulos
+
 
 
 
